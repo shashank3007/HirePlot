@@ -1,11 +1,14 @@
 import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import Ticker from "@/components/Ticker";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
-        {/* sections will be added in subsequent steps */}
+      <main>
+        <HeroSection />
+        <Ticker />
       </main>
     </>
   );

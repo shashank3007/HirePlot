@@ -17,6 +17,14 @@
   --font-display: "Fraunces", Georgia, serif;
   --font-sans:    "Geist", system-ui, sans-serif;
   --font-mono:    "Geist Mono", ui-monospace, monospace;
+
+  /* Animations */
+  --animate-ticker: ticker 28s linear infinite;
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
 }
 
 :root {
@@ -28,4 +36,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overflow-x: hidden;
 }
