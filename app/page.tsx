@@ -5,6 +5,9 @@ import ProblemSection from "@/components/ProblemSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import PricingSection from "@/components/PricingSection";
 import RoadmapSection from "@/components/RoadmapSection";
+import ComparisonSection from "@/components/ComparisonSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +20,10 @@ export default function Home() {
         <HowItWorksSection />
         <PricingSection />
         <RoadmapSection />
+        <ComparisonSection />
+        <CTASection />
       </main>
+      <Footer />
     </>
   );
 }
