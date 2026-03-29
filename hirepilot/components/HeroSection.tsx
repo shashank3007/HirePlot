@@ -38,7 +38,7 @@ const statCards = [
 
 export default function HeroSection() {
   return (
-    <section className="relative grid min-h-screen grid-cols-2 items-center overflow-hidden px-12 pb-20 pt-[140px]">
+    <section className="relative grid min-h-screen grid-cols-1 items-center overflow-hidden px-6 pb-16 pt-28 md:grid-cols-2 md:px-12 md:pb-20 md:pt-[140px]">
       {/* Left column */}
       <div>
         <motion.p
@@ -101,7 +101,7 @@ export default function HeroSection() {
 
       {/* Right column — stat cards */}
       <motion.div
-        className="flex flex-col gap-4 pl-16"
+        className="flex flex-col gap-4 md:pl-16"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}

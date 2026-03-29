@@ -59,7 +59,7 @@ const cardVariants: Variants = {
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="px-12 py-[100px]">
+    <section id="pricing" className="px-6 py-16 md:px-12 md:py-[100px]">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export default function PricingSection() {
 
       {/* Cards */}
       <motion.div
-        className="mt-16 grid grid-cols-3"
+        className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-3"
         style={{ gap: "2px" }}
         variants={containerVariants}
         initial="hidden"

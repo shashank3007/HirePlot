@@ -81,7 +81,7 @@ const stepVariants: Variants = {
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="bg-dark-2 px-12 py-[100px]">
+    <section id="how-it-works" className="bg-dark-2 px-6 py-16 md:px-12 md:py-[100px]">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -108,15 +108,15 @@ export default function HowItWorksSection() {
 
       {/* Steps grid */}
       <motion.div
-        className="relative mt-16 grid grid-cols-5"
+        className="relative mt-12 grid grid-cols-2 gap-y-10 md:mt-16 md:grid-cols-5 md:gap-y-0"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
       >
-        {/* Connecting gradient line */}
+        {/* Connecting gradient line — desktop only */}
         <div
-          className="pointer-events-none absolute left-[10%] right-[10%] top-7 h-px"
+          className="pointer-events-none absolute left-[10%] right-[10%] top-7 hidden h-px md:block"
           style={{
             background:
               "linear-gradient(90deg, transparent, #d97757, #6a9bcc, #788c5d, transparent)",

@@ -64,7 +64,7 @@ export default function RoadmapSection() {
   return (
     <section
       id="roadmap"
-      className="border-t border-white/[0.06] px-12 py-[100px]"
+      className="border-t border-white/[0.06] px-6 py-16 md:px-12 md:py-[100px]"
     >
       {/* Header */}
       <motion.div
@@ -98,11 +98,11 @@ export default function RoadmapSection() {
         whileInView="visible"
         viewport={{ once: true, margin: "-60px" }}
       >
-        {/* Vertical gradient line at left-[200px] */}
+        {/* Vertical gradient line */}
         <div
           className="pointer-events-none absolute bottom-0 top-0 w-px"
           style={{
-            left: "200px",
+            left: "clamp(140px, 15vw, 200px)",
             background:
               "linear-gradient(180deg, #d97757, #6a9bcc, #788c5d)",
             opacity: 0.25,
@@ -113,7 +113,7 @@ export default function RoadmapSection() {
           <motion.div
             key={period}
             className="grid border-b border-white/[0.04] transition-colors duration-300 hover:bg-white/[0.015] last:border-b-0"
-            style={{ gridTemplateColumns: "200px 1fr" }}
+            style={{ gridTemplateColumns: "clamp(140px, 15vw, 200px) 1fr" }}
             variants={rowVariants}
           >
             {/* Left: phase */}

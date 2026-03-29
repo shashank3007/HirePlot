@@ -58,7 +58,7 @@ function BadgeBad({ children }: { children: React.ReactNode }) {
 
 export default function ComparisonSection() {
   return (
-    <section className="bg-dark-2 px-12 py-[100px]">
+    <section className="bg-dark-2 px-6 py-16 md:px-12 md:py-[100px]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -79,12 +79,13 @@ export default function ComparisonSection() {
       </motion.div>
 
       <motion.div
+        className="overflow-x-auto"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
       >
-        <table className="w-full border-collapse border border-white/[0.06]">
+        <table className="w-full min-w-[600px] border-collapse border border-white/[0.06]">
           <thead>
             <tr>
               {headers.map((h, i) => (
