@@ -4,6 +4,7 @@ import Ticker from "@/components/Ticker";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import PricingSection from "@/components/PricingSection";
+import RoadmapSection from "@/components/RoadmapSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ProblemSection />
         <HowItWorksSection />
         <PricingSection />
+        <RoadmapSection />
       </main>
     </>
   );
