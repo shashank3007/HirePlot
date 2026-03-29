@@ -10,7 +10,7 @@ export default function CTASection() {
   return (
     <section
       id="get-started"
-      className="relative overflow-hidden px-12 py-[120px] text-center"
+      className="relative overflow-hidden px-6 py-20 text-center md:px-12 md:py-[120px]"
     >
       {/* Radial orange glow */}
       <div

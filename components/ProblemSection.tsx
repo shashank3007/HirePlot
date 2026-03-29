@@ -37,7 +37,7 @@ const itemVariants: Variants = {
 
 export default function ProblemSection() {
   return (
-    <section className="px-12 py-[100px]">
+    <section className="px-6 py-16 md:px-12 md:py-[100px]">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export default function ProblemSection() {
 
       {/* Problem grid */}
       <motion.div
-        className="mt-16 grid grid-cols-2 border border-white/[0.06]"
+        className="mt-12 grid grid-cols-1 border border-white/[0.06] md:mt-16 md:grid-cols-2"
         style={{ gap: "2px" }}
         variants={containerVariants}
         initial="hidden"
